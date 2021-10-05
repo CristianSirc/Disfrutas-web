@@ -1,0 +1,296 @@
+
+*{
+    font-family: Verdana;
+    box-sizing: border-box;
+}
+
+body{
+	padding-top: 1em;
+    margin-top: 0px;
+    top: 0px;
+    background: linear-gradient(to bottom, #e391ff, white);
+}
+
+.contenido p{
+	color: #404042;
+}
+
+header{ 
+	background-image: url("img/inicio.jpg");
+	background-size: 100%;
+}
+
+.page{
+    background-color: white;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    margin-left: 7%;
+	margin-right: 7%;
+
+    box-shadow: 0px 0px 10px gray;
+    border-radius: 10px;
+}
+
+.logo{
+	border: 1px solid #E59AFF;
+	border-radius: 50%;
+	width: 20%;
+	margin: 1% 40%;
+	transition: 2s;
+	transform: rotate(-360deg);
+}
+
+.contenido{
+
+	background-color: white;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    margin-left: 7%;
+	margin-right: 7%;
+
+    box-shadow: 0px 0px 10px gray;
+    border-radius: 10px;
+
+    padding-bottom: 100px;
+}
+
+
+
+.box-section img{
+	box-shadow: 0px 0px 10px gray;
+	border-radius: 8%;
+	width: 32%;
+	float: left;
+	padding: 1em;
+	background-color: white;
+	margin: 0.65%;
+}
+
+#frutas{
+	padding-top: 10px;
+}
+
+footer{
+	clear: both;
+	padding-top: 3em;
+	padding-bottom: 4px;
+	text-align: center;
+	color: #AAAAAA;
+}
+
+footer img{
+	border-radius: 50%;
+	border: 2px solid;
+	border-color: #22ba8d;
+	width: 3%;
+}
+
+nav li{
+	display: inline;
+	width: 40%;
+}
+
+nav ul{
+	border-top: 1em;
+	text-align: center;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	padding-bottom: 1em;
+}
+
+li:hover{
+	font-size: 110%
+
+}
+
+nav a {
+	background-color: rgba(237, 154, 219,0.8);
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	border-radius: 10%;
+}
+
+nav .active{
+	background-color: #e35bc5; 
+	color: white;
+	font-size: 90%;
+	box-shadow: 3px 3px 3px #b06db3;
+}
+
+nav a:hover {
+	background-color: #e35bc5; 
+	color: white;
+	font-size: 90%;
+	box-shadow: 3px 3px 3px #b06db3;
+	cursor: pointer;
+}
+
+.box-a img{
+	width: 45%;
+	border-radius: 8px;
+}
+
+.wapp img{
+	width: 20%;
+}
+/*********************************************************/
+
+/*********************************************************/
+/*Ingreso*/
+
+input[type="text"], input[type="password"]{
+	outline: none;
+	padding: 10px;
+	display: block;
+	width: 300px;
+	border-radius: 3px;
+	border: 1px solid #eee;
+	margin: 20px;
+}
+
+input[type="submit"]{
+	padding: 10px;
+	color: #fff;
+	background: #22BA8D;
+	width: 300px;
+	margin: 20px;
+	margin-top: 0;
+	border: 0;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover{
+	background-color: #04B07E;
+}
+
+/*********************************************************/
+
+
+
+/*****************************************************/
+
+/*Responsive*/
+
+.menu, #check-menu {
+	display: none;
+}
+
+@media screen and (max-width: 800px){
+	section, aside{
+		width: 100%;
+	}
+
+	header{
+		background-size: 100%;
+
+	}
+	
+	nav li{
+		display: block;
+		text-align: left;
+		margin: 20px;
+		transition: 1s;
+	}
+
+	nav a:hover{
+		box-shadow: 3px 3px 3px purple;
+	}
+
+	nav li:hover{
+		transform: translateX(-20px);
+	}
+
+	.inicio .row, .inicio #centro{
+		width: 100%;
+	}
+
+
+}
+
+
+/*****************************************/
+/*****************************************/
+
+@media screen and (max-width: 500px){
+	#check-menu:checked ~ nav {
+		display: block;
+	}
+
+	header{
+		background-size: 100%;
+
+	}
+
+	.sup-section, .inf-section, .contenido{
+		width: 100%;
+	}
+
+	nav{
+		display: none;
+		position: fixed;
+		top: 70px;
+		left: 20px;
+		background-color: rgba(237,66,82,0.7);
+	}
+
+	nav li{
+		width: 100%;
+		margin-left: -20px;
+	}
+
+	nav a:hover{
+		box-shadow: 3px 3px 3px purple;
+	}
+
+
+	.menu{
+		display: block;
+		position: fixed;
+		top: 20px;
+		left: 20px;
+	}
+
+	.img-menu{
+		background-color: white;
+		width: 50px;
+	}
+
+	.img-menu:hover{
+		cursor: pointer;
+		transform: scale(1.2);
+	}
+
+	#informacion .barras, #informacion .acerca{
+		width:100%;
+	}
+
+	.tabla.primera .lista, .tabla.medio .lista, .tabla.final .lista{
+		width:90%;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	.grupo .grupo-item p{
+		font-size: 55%;
+	}
+
+	.container.total{
+		text-align: center;
+	}
+
+	.container.total .button{
+		padding: 2% 30%;
+	}
+
+
+}
+
+	
